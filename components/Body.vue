@@ -142,6 +142,10 @@
   width: 90%;
   height: auto;
   border-radius: 32px;
+  @media (max-width: 450px) {
+    max-width: 600px;
+    min-width: 0px;
+  }
 }
 
 .text-container {
@@ -151,6 +155,8 @@
   padding-top: 40px;
   width: 90%;
   justify-content: space-between;
+  @media (max-width:450px) {
+  }
 }
 
 .oText {
@@ -338,6 +344,9 @@
   width: 90%;
   padding-left: 183px;
   padding-top: 143px;
+  @media (max-width: 450px) {
+    grid-template-columns: 1fr; /* Устанавливаем одну колонку */
+  }
 }
 
 .factImage {
@@ -346,6 +355,10 @@
   object-fit: cover;
   transition: transform 0.3s ease;
   pointer-events: none;
+  @media (max-width: 450px) {
+    height: 240px;
+    width: 344px
+  }
 }
 
 .factFixImage {
@@ -354,6 +367,10 @@
   object-fit: cover;
   transition: transform 0.3s ease;
   pointer-events: none;
+  @media (max-width: 450px) {
+    height: 240px;
+    width: 344px
+  }
 }
 
 .factsButton {
@@ -363,6 +380,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: transparent;
+  @media (max-width: 450px) {
+    height: 240px;
+    width: 344px
+  }
 }
 
 .factsButton:hover .factImage {

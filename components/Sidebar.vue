@@ -65,6 +65,9 @@ function toggleMenu() {
   display: flex;
   position: relative;
   height: 3500px;
+  @media (max-width: 450px) {
+  display: none;
+  }
 }
 
 .dropdown {

@@ -47,13 +47,18 @@ const scrollToTop = () => {
 .footer {
   display: flex;
   justify-content: space-between;
-  height: 160px;
+  align-items: center;
+  width: 100%;
   padding: 48px 112px 48px 112px;
   background: #F269AF;
   color: white;
   text-align: center;
   margin-top: auto;
   z-index: 1;
+  @media (max-width:450px) {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 
 .cityFooterWrapper {

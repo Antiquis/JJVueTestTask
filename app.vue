@@ -31,6 +31,10 @@ import Sidebar from '@/components/Sidebar.vue';
   background-repeat: repeat;
   display: flex;
   flex-direction: column;
+  @media (max-width: 450px) {
+    width: 700px;
+    height: 4750px;
+  }
 }
 
 .sidebar-toggle {

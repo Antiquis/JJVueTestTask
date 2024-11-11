@@ -3,7 +3,7 @@
         <img src="../assets/icons/JJLogo.svg" alt="JJLogo" class="logo" />
         <div class="cityBox">
             <div class="leftButtons">
-                <button class="city" @click="handleClick">
+                <button class="city">
                     <img src="../assets/icons/Marker.svg" alt="Marker" />
                     <p class="nav-link">МОСКВА</p>
                 </button>
@@ -31,9 +31,6 @@
 </template>
 
 <script setup lang="ts">
-const handleClick = () => {
-    console.log('City button clicked!');
-};
 </script>
 
 <style scoped lang="scss">
@@ -70,12 +67,21 @@ const handleClick = () => {
     justify-content: space-between;
     align-items: center;
     width: 90%;
+    @media (max-width: 450px) {
+        justify-content: center;
+    }
 }
 
 .leftButtons {
     display: flex;
     gap: 16px;
     align-items: center;
+}
+
+@media (max-width: 450px) {
+    .leftButtons {
+        display: none; 
+    }
 }
 
 .rightButtons {
@@ -160,6 +166,12 @@ const handleClick = () => {
     background: #ABEC20;
     border: #ABEC20 solid 0px;
     transition: transform 0.3s ease-out, background-color 0.3s ease;
+}
+
+@media (max-width: 450px) {
+    .holydayBuy {
+        display: none; 
+    }
 }
 
 .ticketBuyText {
